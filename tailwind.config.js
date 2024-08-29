@@ -8,6 +8,8 @@ export default {
         gradient_end: "#7E7E7E",
         primary: "#13082A",
         button_base: "#7879F1",
+        card_color: '#1C0E41',
+        Card_Button: '#7879F1',
       },
       maxHeight: {
         max: "1728px",
