@@ -7,6 +7,9 @@ export default {
         "navbar-gradient":
           "linear-gradient(to left, rgba(126, 126, 126, 0.3) 32%, rgba(19, 8, 42, 0.3) 68%)",
       },
+      perspective: {
+        '1000': '1000px',
+      },
       colors: {
         gradient_start: "#13082A",
         gradient_end: "#7E7E7E",
