@@ -39,18 +39,21 @@ const Card = ({ title, description, buttonText, icon }) => {
                 style={{ transform: "rotate(0deg)" }}
             ></div>
 
-            <div className=" flex flex-col justify-center bg-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-2xl text-center  text-white shadow-lg 
-             w-[280px] h-[286px]
-            md:w-[280px] md:h-[286px]
-            xl:w-[380px] xl:h-[346px] mx-auto z-10" >
+            <div className=" flex flex-col justify-center bg-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-2xl text-center space-y-2 md:space-y-4 text-white shadow-lg 
+            
+                w-[280px] h-[280px]  
+                lg:w-[320px] lg:h-[320px]  
+                xl:w-[360px] xl:h-[360px]  
+
+             mx-auto z-10" >
                 {/* Background Box */}
 
 
-                <div className="flex justify-center mb-4 text-Card_Button  ">
+                <div className="flex justify-center  text-Card_Button  ">
                     {icon}
                 </div>
-                <h2 className="xl:text-4xl  md:text-3xl text-xl  font-LexendDecaBold mb-2">{title}</h2>
-                <p className=" mb-4 xl:text-base  md:text-sm text-xs font-LexendDecaLigh">{description}</p>
+                <h2 className="xl:text-4xl  md:text-3xl text-2xl  font-LexendDecaBold ">{title}</h2>
+                <p className="  xl:text-base  md:text-sm text-sm font-LexendDecaLigh">{description}</p>
                 <button className="text-Card_Button text-base font-medium hover:underline flex justify-center items-center">
                     {buttonText}
                     <ArrowRight className="h-4 ml-2" />
