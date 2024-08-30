@@ -4,7 +4,7 @@ import CardSection from "./CardSection";
 const Home = () => {
   return (
     <div className="w-full h-screen bg-primary">
-      <Navbar />
+      {/* <Navbar /> */}
       <CardSection />
     </div>
   );
