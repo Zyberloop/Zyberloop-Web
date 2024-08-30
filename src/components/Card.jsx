@@ -33,13 +33,13 @@ const Card = ({ title, description, buttonText, icon }) => {
 
     return (
         <div className='flex relative' ref={cardRef}>
-            {/* <div
+            <div
                 ref={backgroundBoxRef}
                 className="absolute inset-0 bg-Card_Button w-100% h-100% rounded-3xl z-0"
                 style={{ transform: "rotate(0deg)" }}
-            ></div> */}
+            ></div>
 
-            <div className=" flex flex-col justify-center bg-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-3xl text-center  text-white shadow-lg 
+            <div className=" flex flex-col justify-center bg-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-2xl text-center  text-white shadow-lg 
              w-[280px] h-[286px]
             md:w-[280px] md:h-[286px]
             xl:w-[380px] xl:h-[346px] mx-auto z-10" >
