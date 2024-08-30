@@ -179,17 +179,17 @@ const TechStack = () => {
     }, []);
 
     return (
-        <div className="relative flex flex-col items-center justify-center h-screen text-white">
+        <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[600px] text-white">
             {/* Central Icon */}
-            <div className="central-icon w-96 h-auto rounded-full flex items-center justify-center">
+            <div className="central-icon xl:w-2/5 md:w-3/5 w-4/5 rounded-full flex items-center justify-center">
                 <img src={TechStackLogo} alt="Central Icon" />
             </div>
 
             {/* Skill Icons */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center mt-10">
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center mt-10 sm:mt-20 md:mt-10">
                 {[Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10].map((imgSrc, index) => (
-                    <div key={index} className={`skill-icon skill-icon-${index} w-16 h-16 m-4 bg-purple-900 rounded-full flex items-center justify-center`}>
-                        <img src={imgSrc} alt={`Skill ${index + 1}`} />
+                    <div key={index} className={`skill-icon skill-icon-${index} md:w-16 md:h-16 w-8 h-8 m-4 rounded-full flex items-center justify-center`}>
+                        <img src={imgSrc} alt={`Skill ${index + 1}`} className="w-full h-full object-contain" />
                     </div>
                 ))}
             </div>
