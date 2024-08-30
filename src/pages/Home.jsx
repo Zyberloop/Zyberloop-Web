@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import HeroSection from "../sections/HeroSection";
+import TechStack from "../sections/TechStack";
 import CardSection from "./CardSection";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <CardSection />
+      <TechStack />
     </div>
   );
 };
