@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-dots li button:before {
+    color: white;
+    /* Change dot color to white */
+    opacity: 1;
+    /* Ensure the dots are fully visible */
+}
+
+.slick-dots li.slick-active button:before {
+    color: white;
+    /* Active dot color to white */
+    opacity: 1;
+    /* Ensure the active dot is fully visible */
+}
