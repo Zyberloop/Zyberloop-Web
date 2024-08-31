@@ -15,7 +15,7 @@ const ProjectSection = () => {
             tag={"Featured  Project"}
             name={"PearlX"}
             description={
-              "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+              "At PearlX, we develop innovative, reliable, and user-friendly software solutions for booking spaces. Using cutting-edge technologies and agile methodologies, we create high-quality applications that cater to our clients' unique needs, ensuring seamless operations and outstanding user experiences."
             }
             link={"https://pearlx.zyberloop.net/"}
             flipped={false}
@@ -24,7 +24,7 @@ const ProjectSection = () => {
             tag={"Featured  Project"}
             name={"Entrix Lanka.lk"}
             description={
-              "A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+              "We designed and built the Entrix Lanka website to showcase their solar energy solutions effectively. Additionally, we manage their social media marketing efforts, focusing on increasing customer interaction and building a stronger brand presence online. This combined approach ensures that Entrix Lanka's digital presence is engaging and well-aligned with their business goals."
             }
             link={"https://www.entrixlanka.lk/"}
             flipped={true}

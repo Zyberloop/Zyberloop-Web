@@ -9,18 +9,18 @@ const CardSection = () => {
 
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Web Development"
+                    description="Zyberloop creates robust, user-friendly websites to enhance businesses' online presence, tailored for local markets."
                     buttonText="Get Started" />
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Mobile App Development"
+                    description="We develop mobile apps that enhance customer engagement, focusing on usability, functionality, and performance."
                     buttonText="Get Started" />
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="ERP Solutions"
+                    description="We provide customized ERP solutions to streamline operations and improve business efficiency."
                     buttonText="Get Started" />
 
 
@@ -28,18 +28,18 @@ const CardSection = () => {
 
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Logos & Brand Designing"
+                    description="Zyberloop creates impactful logos and brand designs to establish a strong, memorable identity for businesses."
                     buttonText="Get Started" />
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Cloud Solutions"
+                    description="We offer scalable cloud solutions to enhance data security, accessibility, and business agility."
                     buttonText="Get Started" />
                 <Card
                     icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Create"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    title="Social Media Management"
+                    description="We manage social media platforms to boost brand visibility, engage audiences, and drive business growth."
                     buttonText="Get Started" />
 
 
