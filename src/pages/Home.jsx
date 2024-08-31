@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import HeroSection from "../sections/HeroSection";
 import TechStack from "../sections/TechStack";
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection />
       <CardSection />
       <TechStack />
+      <Footer />
     </div>
   );
 };
