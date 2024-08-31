@@ -43,7 +43,7 @@ export default function Testimonial() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     centerMode: true, // Add this line
-                    centerPadding: '20px', // Adjust as needed
+                    centerPadding: '0', // Adjust as needed
                 }
             }
         ]
@@ -58,7 +58,7 @@ export default function Testimonial() {
             </div>
 
             <Slider {...settings} className='w-full'>
-                <div className='px-3 py-10'>
+                <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
@@ -69,7 +69,7 @@ export default function Testimonial() {
                     />
                 </div>
 
-                <div className='px-3 py-10'>
+                <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
@@ -80,7 +80,7 @@ export default function Testimonial() {
                     />
                 </div>
 
-                <div className='px-3 py-10'>
+                <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
