@@ -83,8 +83,8 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Web design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Web design'
-                                    ? 'bg-Card_Button text-white border-carbg-Card_Button'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    ? 'bg-card_color text-white border-card_color'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Web design
@@ -93,8 +93,8 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Graphic design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Graphic design'
-                                    ? 'bg-Card_Button text-white border-carbg-Card_Button'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    ? 'bg-card_color text-white border-card_color'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Graphic design
@@ -103,8 +103,8 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Design system')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${formData.interest === 'Design system'
-                                    ? 'bg-Card_Button text-white border-carbg-Card_Button'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    ? 'bg-card_color text-white border-card_color'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Design system
@@ -118,7 +118,7 @@ export default function ContactForm() {
                                 placeholder="Name"
                                 value={formData.name}
                                 onChange={handleInputChange}
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
                             />
                             <input
                                 type="email"
@@ -126,7 +126,7 @@ export default function ContactForm() {
                                 placeholder="Email"
                                 value={formData.email}
                                 onChange={handleInputChange}
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
                             />
                             <input
                                 type="text"
@@ -134,7 +134,7 @@ export default function ContactForm() {
                                 placeholder="Subject"
                                 value={formData.subject}
                                 onChange={handleInputChange}
-                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-[#a91079]"
+                                className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
                             />
                             <textarea
                                 name="message"
@@ -142,7 +142,7 @@ export default function ContactForm() {
                                 rows="6"
                                 value={formData.message}
                                 onChange={handleInputChange}
-                                className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-[#a91079]"
+                                className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-none"
                             />
                             <button
                                 type="submit"
