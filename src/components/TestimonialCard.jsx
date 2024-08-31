@@ -44,7 +44,7 @@ export default function TestimonialCard({
     }, []);
 
     return (
-        <div ref={cardRef} className='flex flex-col max-w-[350px] text-center px-2 md:py-10 py-5 bg-gradient-to-r from-card_color via-black to-card_color rounded-xl transition-transform duration-300'>
+        <div ref={cardRef} className='flex flex-col max-w-[300px] text-center px-2 md:py-6 py-4 bg-gradient-to-r from-card_color via-black to-card_color rounded-xl transition-transform duration-300'>
             <div className="flex flex-col items-center">
                 <img
                     src={image}
