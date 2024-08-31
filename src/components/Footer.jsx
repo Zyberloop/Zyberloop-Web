@@ -3,96 +3,9 @@ import React from 'react'
 export default function Footer() {
     return (
 
-        <div class="bg-[#0b0e37] font-sans tracking-wide relative overflow-hidden">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-12 gap-8 py-14 px-12 relative z-20">
-                <div>
-                    <h2 class="text-lg text-gray-300 font-semibold mb-6">Company</h2>
-                    <ul class="space-y-5">
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>About</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Services</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Contact</a></li>
-                    </ul>
-                </div>
+        <div class="bg-card_color font-LexendDecaLigh tracking-wide relative overflow-hidden ">
 
-                <div>
-                    <h2 class="text-lg text-gray-300 font-semibold mb-6">Products</h2>
-                    <ul class="space-y-5">
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Featured</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>New Arrivals</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Sale</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2 class="text-lg text-gray-300 font-semibold mb-6">Resources</h2>
-                    <ul class="space-y-5">
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Documentation</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>FAQ</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Support</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2 class="text-lg text-gray-300 font-semibold mb-6">Connect</h2>
-                    <ul class="space-y-5">
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Facebook</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Twitter</a></li>
-                        <li><a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base flex items-center transition-all"><svg
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="inline mr-1.5 h-4 w-4 shrink-0">
-                            <path d="M9 18l6-6-6-6" />
-                        </svg>Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <hr class="border-gray-600" />
-
-            <div class="my-8 px-12 flex flex-wrap sm:justify-between gap-6 relative z-20">
+            <div class="my-8 px-12 flex flex-wrap sm:justify-between gap-6 relative z-20 ">
                 <div class="flex space-x-5">
                     <a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base transition-all">
                         <svg class="w-5 h-5 fill-gray-400 hover:fill-white" viewBox="0 0 24 24" aria-hidden="true">
