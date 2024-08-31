@@ -52,8 +52,12 @@ const Card = ({ title, title2, description, buttonText, icon }) => {
                 <div className="flex justify-center  text-Card_Button  ">
                     {icon}
                 </div>
-                <h2 className="xl:text-4xl  md:text-3xl text-2xl  font-LexendDecaBold  ">{title}</h2>
-                <h2 className="xl:text-4xl  md:text-3xl text-2xl  font-LexendDecaBold  ">{title2}</h2>
+                <div>
+                    <h2 className="xl:text-4xl  md:text-3xl text-2xl  font-LexendDecaBold  ">{title}</h2>
+                    <h2 className="xl:text-4xl  md:text-3xl text-2xl  font-LexendDecaBold  ">{title2}</h2>
+
+                </div>
+
                 <p className="  xl:text-base  md:text-sm text-sm font-LexendDecaLigh">{description}</p>
                 <button className="text-Card_Button text-base font-medium hover:underline flex justify-center items-center">
                     {buttonText}
