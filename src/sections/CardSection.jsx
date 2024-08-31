@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
-import { Layers2 } from 'lucide-react';
+import { AlignHorizontalDistributeCenter, Layers2 } from 'lucide-react';
 
 const CardSection = () => {
     return (
@@ -8,7 +8,7 @@ const CardSection = () => {
             <div className='grid xl:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-10 py-10 px-10 max-w-[1600px]'>
 
                 <Card
-                    icon={<Layers2 className='h-auto xl:w-20  md:w-14 w-10' />}
+                    icon={<AlignHorizontalDistributeCenter className='h-auto xl:w-20  md:w-14 w-10' />}
                     title="Web Development"
                     description="Zyberloop creates robust, user-friendly websites to enhance businesses' online presence, tailored for local markets."
                     buttonText="Get Started" />

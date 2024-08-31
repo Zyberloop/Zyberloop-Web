@@ -51,7 +51,7 @@ export default function Testimonial() {
 
 
     return (
-        <div className='relative flex flex-col justify-center items-center max-w-max mx-auto space-y-10 py-5 px-10 z-30'>
+        <div className='flex flex-col justify-center items-center max-w-max mx-auto space-y-10 py-5 px-10 z-30'>
             <div className=" mx-auto text-center flex flex-col justify-center items-center">
                 <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-extrabold gradient-text ">What our happy client say</h2>
                 <p className="text-sm md:text-base mt-4  text-white max-w-2xl ">Veniam proident aute magna anim excepteur et ex consectetur velit ullamco veniam minim aute sit. Elit occaecat officia et laboris Lorem minim. Officia do aliqua adipisicing ullamco in</p>
