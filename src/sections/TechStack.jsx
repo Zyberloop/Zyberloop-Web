@@ -180,7 +180,7 @@ const TechStack = () => {
 
     return (
         <div className='pt-10 px-5'>
-            <div className='relative z-20 gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pb-40'>
+            <div className='relative z-20 gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:pb-32 pb-5'>
                 Powering Success with Technologies
 
             </div>

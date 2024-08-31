@@ -83,8 +83,8 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Web design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Web design'
-                                    ? 'bg-card_color text-white border-card_color'
-                                    : 'bg-transparent text-white border-none'
+                                    ? 'gradient-btn text-white border-none'
+                                    : 'bg-transparent text-white border-none '
                                     }`}
                             >
                                 Web design
@@ -93,7 +93,7 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Graphic design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Graphic design'
-                                    ? 'bg-card_color text-white border-card_color'
+                                    ? 'gradient-btn text-white border-none '
                                     : 'bg-transparent text-white border-none'
                                     }`}
                             >
@@ -103,8 +103,8 @@ export default function ContactForm() {
                                 type="button"
                                 onClick={() => handleInterestChange('Design system')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${formData.interest === 'Design system'
-                                    ? 'bg-card_color text-white border-card_color'
-                                    : 'bg-transparent text-white border-none'
+                                    ? 'gradient-btn text-white border-none'
+                                    : 'bg-transparent text-white border-none '
                                     }`}
                             >
                                 Design system
@@ -146,7 +146,7 @@ export default function ContactForm() {
                             />
                             <button
                                 type="submit"
-                                className="text-white bg-card_color hover:bg-Card_Button tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full mt-6"
+                                className="text-white btn-5 bg-card_color hover:bg-Card_Button tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full mt-6"
                             >
                                 <Send className="mr-2 h-5" />
                                 Send Message
