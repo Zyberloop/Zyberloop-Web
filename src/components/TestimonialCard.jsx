@@ -62,7 +62,7 @@ export default function TestimonialCard({
             </div>
             <div className="flex justify-center space-x-1 mt-4">
                 {[...Array(rating)].map((_, index) => (
-                    <Star key={index} className='text-white fill-Card_Button' />
+                    <Star key={index} className='text-Card_Button fill-Card_Button' />
                 ))}
             </div>
         </div>
