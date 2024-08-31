@@ -5,7 +5,7 @@ export default function Footer() {
 
         <div class="bg-card_color font-LexendDecaLigh tracking-wide relative overflow-hidden ">
 
-            <div class="my-8 px-12 flex flex-wrap sm:justify-between gap-6 relative z-20 ">
+            <div class="my-8 px-12 flex flex-wrap sm:justify-between gap-6 relative z-20 max-w-max mx-auto">
                 <div class="flex space-x-5">
                     <a href="javascript:void(0)" class="text-gray-300 hover:text-white text-base transition-all">
                         <svg class="w-5 h-5 fill-gray-400 hover:fill-white" viewBox="0 0 24 24" aria-hidden="true">
