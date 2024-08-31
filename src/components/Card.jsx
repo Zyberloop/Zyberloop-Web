@@ -39,7 +39,7 @@ const Card = ({ title, description, buttonText, icon }) => {
                 style={{ transform: "rotate(0deg)" }}
             ></div>
 
-            <div className=" flex flex-col justify-center bg-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-2xl text-center space-y-2 md:space-y-4 text-white shadow-lg 
+            <div className=" flex flex-col justify-center bg-gradient-to-r from-card_color via-black to-card_color p-6 xl:gap-2 md:gap-1 gap-0 rounded-2xl text-center space-y-2 md:space-y-4 text-white shadow-lg 
             
                 w-[280px] h-[280px]  
                 lg:w-[320px] lg:h-[320px]  

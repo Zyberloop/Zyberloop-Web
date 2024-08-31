@@ -4,10 +4,10 @@ const ProjectSection = () => {
   return (
     <div className="w-full h-full">
       <div className="w-full max-w-max mx-auto h-full">
-        <div className="text-white text-7xl text-center">
+        <div className="gradient-text text-7xl text-center">
           Innovative Projects That Shine
         </div>
-        <div className="bg-gradient-to-br from-[#7879F1] to-[#45468B] bg-clip-text text-transparent text-center text-7xl mt-4">
+        <div className="gradient-text2 bg-clip-text text-transparent text-center text-7xl mt-4">
           Our Effort
         </div>
         <div className="max-w-[1160px] w-full mx-auto">

@@ -30,7 +30,7 @@ export default function ContactForm() {
             <div className="mt-6 max-w-max mx-auto rounded-lg">
                 <div className="grid lg:grid-cols-2 items-center gap-14 sm:p-8 p-4 font-LexendDecaLigh">
                     <div>
-                        <h1 className="text-4xl font-bold text-white font-LexendDecaBold">Contact Us</h1>
+                        <h1 className="text-4xl font-bold gradient-text2 font-LexendDecaBold">Contact Us</h1>
                         <p className="text-sm text-gray-300 mt-4 leading-relaxed">
                             Have some big idea or brand to develop and need help? Then reach out, we'd love to hear about your project and provide help.
                         </p>

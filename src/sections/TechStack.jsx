@@ -179,12 +179,12 @@ const TechStack = () => {
     }, []);
 
     return (
-        <div className='py-10 px-5'>
-            <div className='relative z-20 text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center'>
+        <div className='pt-10 px-5'>
+            <div className='relative z-20 gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pb-40'>
                 Powering Success with Technologies
 
             </div>
-            <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[600px] text-white z-10">
+            <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[350px] text-white z-10">
                 {/* Central Icon */}
                 <div className="central-icon xl:w-2/5 md:w-3/5 w-4/5 rounded-full flex items-center justify-center">
                     <img src={TechStackLogo} alt="Central Icon" />
@@ -193,7 +193,7 @@ const TechStack = () => {
                 {/* Skill Icons */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center mt-10 sm:mt-20 md:mt-10">
                     {[Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9, Img10].map((imgSrc, index) => (
-                        <div key={index} className={`skill-icon skill-icon-${index} md:w-16 md:h-16 w-8 h-8 m-4 rounded-full flex items-center justify-center`}>
+                        <div key={index} className={`skill-icon skill-icon-${index} md:w-16 md:h-16 w-12 h-12 m-4 rounded-full flex items-center justify-center`}>
                             <img src={imgSrc} alt={`Skill ${index + 1}`} className="w-full h-full object-contain" />
                         </div>
                     ))}
