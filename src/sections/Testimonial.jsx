@@ -90,7 +90,7 @@ export default function Testimonial() {
                         rating={4}
                     />
                 </div>
-                <div className='px-3 py-10'>
+                <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
@@ -100,7 +100,7 @@ export default function Testimonial() {
                         rating={4}
                     />
                 </div>
-                <div className='px-3 py-10'>
+                <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
