@@ -84,7 +84,7 @@ export default function ContactForm() {
                                 onClick={() => handleInterestChange('Web design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Web design'
                                     ? 'bg-card_color text-white border-card_color'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Web design
@@ -94,7 +94,7 @@ export default function ContactForm() {
                                 onClick={() => handleInterestChange('Graphic design')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === 'Graphic design'
                                     ? 'bg-card_color text-white border-card_color'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Graphic design
@@ -104,7 +104,7 @@ export default function ContactForm() {
                                 onClick={() => handleInterestChange('Design system')}
                                 className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${formData.interest === 'Design system'
                                     ? 'bg-card_color text-white border-card_color'
-                                    : 'bg-transparent text-white border-gray-300'
+                                    : 'bg-transparent text-white border-none'
                                     }`}
                             >
                                 Design system
