@@ -179,14 +179,14 @@ const TechStack = () => {
     }, []);
 
     return (
-        <div className='pt-10 px-5'>
-            <div className='relative z-20 gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center pb-40'>
+        <div className='pt-10 px-5 py-20'>
+            <div className='relative z-20 gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center md:pb-32 pb-5'>
                 Powering Success with Technologies
 
             </div>
             <div className="relative flex flex-col items-center justify-center h-[300px] md:h-[350px] text-white z-10">
                 {/* Central Icon */}
-                <div className="central-icon xl:w-2/5 md:w-3/5 w-4/5 rounded-full flex items-center justify-center">
+                <div className="central-icon xl:w-2/5 md:w-3/5 w-4/5 rounded-full flex items-center justify-center pt-40 md:mt-0">
                     <img src={TechStackLogo} alt="Central Icon" />
                 </div>
 

@@ -14,17 +14,20 @@ const CardSection = () => {
 
                 <Card
                     icon={<PanelsTopLeft className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Web Development"
+                    title="Web"
+                    title2='Development'
                     description="Zyberloop creates robust, user-friendly websites to enhance businesses' online presence, tailored for local markets."
                     buttonText="Get Started" />
                 <Card
                     icon={<TabletSmartphone className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Mobile App Development"
+                    title="Mobile App"
+                    title2="Development"
                     description="We develop mobile apps that enhance customer engagement, focusing on usability, functionality, and performance."
                     buttonText="Get Started" />
                 <Card
                     icon={<ChartNetwork className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="ERP Solutions"
+                    title="ERP"
+                    title2="Solutions"
                     description="We provide customized ERP solutions to streamline operations and improve business efficiency."
                     buttonText="Get Started" />
 
@@ -33,17 +36,20 @@ const CardSection = () => {
 
                 <Card
                     icon={<ShieldHalf className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Logos & Brand Designing"
+                    title="Logos & Brand"
+                    title2="Designing"
                     description="Zyberloop creates impactful logos and brand designs to establish a strong, memorable identity for businesses."
                     buttonText="Get Started" />
                 <Card
                     icon={<CloudCog className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Cloud Solutions"
+                    title="Cloud"
+                    title2="Solutions"
                     description="We offer scalable cloud solutions to enhance data security, accessibility, and business agility."
                     buttonText="Get Started" />
                 <Card
                     icon={<ChevronsLeftRightEllipsis className='h-auto xl:w-20  md:w-14 w-10' />}
-                    title="Social Media Management"
+                    title="Social Media"
+                    title2="Management"
                     description="We manage social media platforms to boost brand visibility, engage audiences, and drive business growth."
                     buttonText="Get Started" />
 
