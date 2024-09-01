@@ -1,17 +1,19 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+// Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const ProjectCard = ({ tag, name, description, link, flipped }) => {
+  const cardRef = useRef(null);
   const contentRef = useRef(null);
   const iframeRef = useRef(null);
 
   useEffect(() => {
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: contentRef.current,
+        trigger: cardRef.current,
         start: "top 80%",
         end: "bottom 20%",
         scrub: true,
@@ -19,31 +21,34 @@ const ProjectCard = ({ tag, name, description, link, flipped }) => {
       },
     });
 
+    // Animate the content area
     timeline.fromTo(
       contentRef.current,
       { x: flipped ? 100 : -100, opacity: 0 },
       { x: 0, opacity: 1, duration: 1, ease: "power2.out" }
     );
 
+    // Animate the iframe (image area)
     timeline.fromTo(
       iframeRef.current,
       { opacity: 0, scale: 0.9 },
       { opacity: 1, scale: 1, duration: 1, ease: "power2.out" },
-      "-=0.8" // This will overlap with the previous animation
+      "-=0.8" // Overlaps with the previous animation by 0.8 seconds
     );
   }, [flipped]);
 
   return (
     <div
-      className={`relative w-full h-full mt-10 flex ${
-        flipped ? "flex-row-reverse" : "flex-row"
+      ref={cardRef}
+      className={`relative w-full h-full mt-10 flex flex-col md:flex-row ${
+        flipped ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
       {/* Left Side (Content) */}
       <div
         ref={contentRef}
-        className={`w-2/3 mb-10 h-full p-4 text-[#CCD6F6] z-10 ${
-          flipped ? "-ml-16" : "-mr-16"
+        className={`w-full md:w-2/3 mb-10 h-full p-4 text-[#CCD6F6] z-10 ${
+          flipped ? "md:-ml-16" : "md:-mr-16"
         }`}
       >
         <p
@@ -65,23 +70,25 @@ const ProjectCard = ({ tag, name, description, link, flipped }) => {
         </div>
       </div>
 
-      {/* Right Side (Link as iframe) */}
-      <div className="w-2/3 p-4 z-0">
+      {/* Right Side (Image) */}
+      <div ref={iframeRef} className="w-full md:w-2/3 p-4 z-0">
         <img
-          ref={iframeRef}
           src={link}
+          alt={name}
           className="w-full h-full border-0 rounded-xl"
         />
-        {/*<iframe
-          ref={iframeRef}
-          src={link}
-          title={name}
-          className="w-full h-full border-0 rounded-xl"
-          loading="lazy"
-        ></iframe>*/}
       </div>
     </div>
   );
 };
 
 export default ProjectCard;
+
+{
+  /*<iframe
+          src={link}
+          title={name}
+          className="w-full h-full border-0 rounded-xl"
+          loading="lazy"
+        ></iframe>*/
+}
