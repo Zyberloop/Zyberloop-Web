@@ -15,7 +15,7 @@ const ProjectSection = () => {
             description={
               "At PearlX, we develop innovative, reliable, and user-friendly software solutions for booking spaces. Using cutting-edge technologies and agile methodologies, we create high-quality applications that cater to our clients' unique needs, ensuring seamless operations and outstanding user experiences."
             }
-            link={"https://pearlx.zyberloop.net/"}
+            link={"/pearlx.webp"}
             flipped={false}
           />
           <ProjectCard
@@ -24,7 +24,7 @@ const ProjectSection = () => {
             description={
               "We designed and built the Entrix Lanka website to showcase their solar energy solutions effectively. Additionally, we manage their social media marketing efforts, focusing on increasing customer interaction and building a stronger brand presence online. This combined approach ensures that Entrix Lanka's digital presence is engaging and well-aligned with their business goals."
             }
-            link={"https://www.entrixlanka.lk/"}
+            link={"/entrix.webp"}
             flipped={true}
           />
         </div>
