@@ -10,7 +10,7 @@ import {
   Send,
 } from "lucide-react";
 
-export default function ContactForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,11 +31,21 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
 
+    // Create an EmailJS template parameters object
+    const templateParams = {
+      from_name: formData.name,
+      from_email: formData.email,
+      to_name: "Your Name or Business",
+      subject: formData.subject,
+      message: formData.message,
+      interested_in: formData.interest,
+    };
+
     emailjs
-      .sendForm(
+      .send(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
+        templateParams,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(
@@ -218,3 +228,4 @@ export default function ContactForm() {
     </div>
   );
 }
+export default ContactForm;
