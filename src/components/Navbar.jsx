@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navbarRef = useRef(null); // Reference to the navbar container
   const starRef = useRef(null);
   const navItemRefs = useRef([]);
 
@@ -15,6 +16,25 @@ const Navbar = () => {
       duration: 1,
     });
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    // Cleanup event listener on unmount or when menu is closed
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
 
   const createRipple = (event) => {
     const button = event.currentTarget;
@@ -68,7 +88,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-32 bg-navbar-gradient">
+    <div ref={navbarRef} className="w-full h-32 bg-navbar-gradient">
       <div className="max-w-max w-full mx-auto h-32 flex justify-between items-center relative px-4">
         <img
           src={"cloud.webp"}
