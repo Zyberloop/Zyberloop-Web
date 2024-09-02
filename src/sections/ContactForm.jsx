@@ -176,6 +176,16 @@ function ContactForm() {
               >
                 Social Media Management
               </button>
+              <button
+                type="button"
+                onClick={() => handleInterestChange("Logo Design")}
+                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${formData.interest === "Logo Design"
+                  ? "gradient-btn text-white border-none"
+                  : "bg-transparent text-white border-none "
+                  }`}
+              >
+                Logo /  Brand Designing
+              </button>
             </div>
 
             <form className="mt-8 space-y-4" onSubmit={handleSubmit}>
@@ -186,6 +196,7 @@ function ContactForm() {
                 value={formData.name}
                 onChange={handleInputChange}
                 className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
+                required
               />
               <input
                 type="email"
@@ -194,6 +205,7 @@ function ContactForm() {
                 value={formData.email}
                 onChange={handleInputChange}
                 className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
+                required
               />
               <input
                 type="text"
@@ -202,6 +214,7 @@ function ContactForm() {
                 value={formData.subject}
                 onChange={handleInputChange}
                 className="w-full rounded-lg py-3 px-4 text-gray-800 text-sm outline-none"
+                required
               />
               <textarea
                 name="message"
@@ -210,6 +223,7 @@ function ContactForm() {
                 value={formData.message}
                 onChange={handleInputChange}
                 className="w-full rounded-lg px-4 text-gray-800 text-sm pt-3 outline-none"
+                required
               />
               <button
                 type="submit"
