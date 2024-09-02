@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navbarRef = useRef(null); // Reference to the navbar container
+  const navbarRef = useRef(null);
   const starRef = useRef(null);
   const navItemRefs = useRef([]);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     gsap.to(starRef.current, {
@@ -30,7 +32,6 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     }
 
-    // Cleanup event listener on unmount or when menu is closed
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -61,30 +62,29 @@ const Navbar = () => {
     });
   };
 
-  const handleClick = (index, event) => {
+  const handleMouseEnter = (index, event) => {
     createRipple(event);
-
     gsap.to(navItemRefs.current[index], {
-      scale: 0.9,
-      duration: 0.2,
-      ease: "power1.out",
-      onComplete: () => {
-        gsap.to(navItemRefs.current[index], {
-          scale: 1.05,
-          y: -5,
-          duration: 0.3,
-          ease: "elastic.out(1, 0.3)", // Jiggly effect
-          onComplete: () => {
-            gsap.to(navItemRefs.current[index], {
-              scale: 1,
-              y: 0,
-              duration: 0.2,
-              ease: "power1.in",
-            });
-          },
-        });
-      },
+      scale: 1.05,
+      y: -5,
+      duration: 0.3,
+      ease: "elastic.out(1, 0.3)",
     });
+  };
+
+  const handleMouseLeave = (index) => {
+    gsap.to(navItemRefs.current[index], {
+      scale: 1,
+      y: 0,
+      duration: 0.2,
+      ease: "power1.in",
+    });
+  };
+
+  const handleClick = (index) => {
+    // Navigate to the desired route based on the index
+    const routes = ["/", "/discover", "/marketplace", "/careers", "/community"];
+    navigate(routes[index]);
   };
 
   return (
@@ -107,9 +107,9 @@ const Navbar = () => {
                 key={item}
                 ref={(el) => (navItemRefs.current[index] = el)}
                 className="ripple-container hover:text-opacity-80 hover:text-pink-300 transition duration-300 cursor-pointer px-4 py-2 rounded-lg"
-                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseEnter={(event) => handleMouseEnter(index, event)}
                 onMouseLeave={() => handleMouseLeave(index)}
-                onClick={(event) => handleClick(index, event)}
+                onClick={() => handleClick(index)}
               >
                 {item}
               </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center relative z-10">
           <button
             className="ripple-container bg-button_base h-10 md:h-12 w-32 md:w-40 lg:h-16 lg:w-48 rounded-full text-md lg:text-lg text-white hover:bg-opacity-90 transition duration-300"
-            onClick={createRipple}
+            onMouseEnter={createRipple}
           >
             Contact Us
             <span
@@ -165,9 +165,9 @@ const Navbar = () => {
                   key={item}
                   ref={(el) => (navItemRefs.current[index] = el)}
                   className="ripple-container hover:text-opacity-80 transition duration-300 cursor-pointer w-48 h-12 text-center rounded-full flex items-center justify-center"
-                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseEnter={(event) => handleMouseEnter(index, event)}
                   onMouseLeave={() => handleMouseLeave(index)}
-                  onClick={(event) => handleClick(index, event)}
+                  onClick={() => handleClick(index)}
                 >
                   {item}
                 </div>
@@ -175,7 +175,7 @@ const Navbar = () => {
             )}
             <button
               className="ripple-container bg-button_base h-12 w-48 rounded-full text-lg hover:bg-opacity-90 transition duration-300"
-              onClick={createRipple}
+              onMouseEnter={createRipple}
             >
               Contact Us
             </button>
