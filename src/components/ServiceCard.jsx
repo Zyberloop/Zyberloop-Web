@@ -46,9 +46,9 @@ const ServiceCard = ({ imageSrc, title, description, flipped }) => {
                     ref={imageRef}
                 />
             </div>
-            <div className="w-full md:w-1/2 p-6 " ref={textRef}>
+            <div className="w-full md:w-1/2 md:p-6 p-2 py-6" ref={textRef}>
                 <h2 className="text-3xl font-bold gradient-text2 mb-4">{title}</h2>
-                <p className="text-white">{description}</p>
+                <p className="text-white  bg-white/10 backdrop-blur-md p-5 rounded-2xl">{description}</p>
             </div>
         </div>
     );

@@ -159,7 +159,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white/30 backdrop-blur-md text-white flex flex-col items-center gap-1 py-4 z-50 border border-white/20 rounded-lg">
-            {["Home", "Discover", "Marketplace", "Careers", "Community"].map(
+            {["Home", "Services", "Projects", "Careers"].map(
               (item, index) => (
                 <div
                   key={item}
