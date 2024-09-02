@@ -14,8 +14,8 @@ const ProjectCard = ({ tag, name, description, link, flipped }) => {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: cardRef.current,
-        start: "top 80%",
-        end: "bottom 20%",
+        start: "top 50%",
+        end: "bottom 50%",
         scrub: true,
         toggleActions: "play none none reverse",
       },
@@ -40,28 +40,24 @@ const ProjectCard = ({ tag, name, description, link, flipped }) => {
   return (
     <div
       ref={cardRef}
-      className={`relative w-full h-full mt-10 flex flex-col md:flex-row ${
-        flipped ? "md:flex-row-reverse" : "md:flex-row"
-      }`}
+      className={`relative w-full h-full mt-10 flex flex-col md:flex-row ${flipped ? "md:flex-row-reverse" : "md:flex-row"
+        }`}
     >
       {/* Left Side (Content) */}
       <div
         ref={contentRef}
-        className={`w-full md:w-2/3 mb-10 h-full p-4 text-[#CCD6F6] z-10 ${
-          flipped ? "md:-ml-16" : "md:-mr-16"
-        }`}
+        className={`w-full md:w-2/3 mb-10 h-full p-4 text-[#CCD6F6] z-10 ${flipped ? "md:-ml-16" : "md:-mr-16"
+          }`}
       >
         <p
-          className={`bg-gradient-to-br from-[#7879F1] to-[#45468B] bg-clip-text text-transparent text-xl my-2 ${
-            flipped ? "text-end" : "text-start"
-          }`}
+          className={`bg-gradient-to-br from-[#7879F1] to-[#45468B] bg-clip-text text-transparent text-xl my-2 ${flipped ? "text-end" : "text-start"
+            }`}
         >
           {tag}
         </p>
         <h1
-          className={`text-2xl font-bold mb-4 ${
-            flipped ? "text-end" : "text-start"
-          }`}
+          className={`text-2xl font-bold mb-4 ${flipped ? "text-end" : "text-start"
+            }`}
         >
           {name}
         </h1>
