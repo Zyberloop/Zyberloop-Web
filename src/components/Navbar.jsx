@@ -83,13 +83,7 @@ const Navbar = () => {
 
   const handleClick = (index) => {
     // Navigate to the desired route based on the index
-    const routes = [
-      "/home",
-      "/discover",
-      "/marketplace",
-      "/careers",
-      "/community",
-    ];
+    const routes = ["/", "/discover", "/marketplace", "/careers", "/community"];
     navigate(routes[index]);
   };
 
