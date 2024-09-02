@@ -119,7 +119,7 @@ function ContactForm() {
                   <Facebook className="text-white " />
                 </a>
               </li>
-              {/* <li className="gradient-btn hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="gradient-btn hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
@@ -127,7 +127,7 @@ function ContactForm() {
                 >
                   <Linkedin className="text-white" />
                 </a>
-              </li> */}
+              </li>
               <li className="gradient-btn  hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a
                   href="https://www.instagram.com/zyberloop/"
