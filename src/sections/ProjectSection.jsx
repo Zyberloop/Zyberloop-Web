@@ -11,9 +11,9 @@ const ProjectSection = () => {
         <div className="max-w-[1160px] w-full mx-auto space-y-10 px-4">
           <ProjectCard
             tag={"Featured Project"}
-            name={"ERP System for Schoolpaperbank.lk"}
+            name={"POS System for Schoolpaperbank.lk"}
             description={
-              "We designed and built the Entrix Lanka website to showcase their solar energy solutions effectively. Additionally, we manage their social media marketing efforts, focusing on increasing customer interaction and building a stronger brand presence online. This combined approach ensures that Entrix Lanka's digital presence is engaging and well-aligned with their business goals."
+              "We implemented a Point of Sale (POS) system for SchoolPaperBank, designed to streamline their sales process and manage inventory in real-time. The system features an intuitive user interface, making it easy for staff to process transactions quickly and efficiently. With automated stock updates and detailed sales reporting, this POS solution enhances operational efficiency and supports better decision-making for SchoolPaperBank’s retail operations."
             }
             link={"/erp.webp"}
             flipped={false}
