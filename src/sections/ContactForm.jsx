@@ -93,10 +93,10 @@ function ContactForm() {
               <li className="flex items-center">
                 <PhoneCall className="text-white" />
                 <a href="tel:+158996888" className="text-white text-sm ml-4">
-                  +158 996 888
+                  +94 70 200 1313
                 </a>
               </li>
-              <li className="flex items-center">
+              {/* <li className="flex items-center">
                 <MapPin className="text-white" />
                 <a
                   href="https://www.google.com/maps"
@@ -104,22 +104,22 @@ function ContactForm() {
                   rel="noopener noreferrer"
                   className="text-white text-sm ml-4"
                 >
-                  123 Street 256 House
+                  No. 246/1/1, High Level Road, Nugegoda.
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             <ul className="flex mt-12 space-x-4">
-              <li className="bg-card_color hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              <li className="gradient-btn hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/zyberloop"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Facebook className="text-white" />
+                  <Facebook className="text-white " />
                 </a>
               </li>
-              <li className="bg-card_color hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              {/* <li className="gradient-btn hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
@@ -127,10 +127,10 @@ function ContactForm() {
                 >
                   <Linkedin className="text-white" />
                 </a>
-              </li>
-              <li className="bg-card_color hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+              </li> */}
+              <li className="gradient-btn  hover:bg-Card_Button h-10 w-10 rounded-full flex items-center justify-center shrink-0">
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/zyberloop/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -149,35 +149,32 @@ function ContactForm() {
               <button
                 type="button"
                 onClick={() => handleInterestChange("Web design")}
-                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${
-                  formData.interest === "Web design"
-                    ? "gradient-btn text-white border-none"
-                    : "bg-transparent text-white border-none "
-                }`}
+                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === "Web design"
+                  ? "gradient-btn text-white border-none"
+                  : "bg-transparent text-white border-none "
+                  }`}
               >
-                Web design
+                Web / Mobile Development
               </button>
               <button
                 type="button"
-                onClick={() => handleInterestChange("Graphic design")}
-                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${
-                  formData.interest === "Graphic design"
-                    ? "gradient-btn text-white border-none "
-                    : "bg-transparent text-white border-none"
-                }`}
+                onClick={() => handleInterestChange("ERP Solutions")}
+                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 mr-4 ${formData.interest === "ERP Solutions"
+                  ? "gradient-btn text-white border-none "
+                  : "bg-transparent text-white border-none"
+                  }`}
               >
-                Graphic design
+                ERP Solutions
               </button>
               <button
                 type="button"
-                onClick={() => handleInterestChange("Design system")}
-                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${
-                  formData.interest === "Design system"
-                    ? "gradient-btn text-white border-none"
-                    : "bg-transparent text-white border-none "
-                }`}
+                onClick={() => handleInterestChange("Social Media Management")}
+                className={`px-4 py-2 rounded-lg text-sm tracking-wider font-medium outline-none border-2 ${formData.interest === "Social Media Management"
+                  ? "gradient-btn text-white border-none"
+                  : "bg-transparent text-white border-none "
+                  }`}
               >
-                Design system
+                Social Media Management
               </button>
             </div>
 

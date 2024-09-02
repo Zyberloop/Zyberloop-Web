@@ -61,55 +61,46 @@ export default function Testimonial() {
                 <div className='px-2 py-10'>
 
                     <TestimonialCard
-                        name="Alice Johnson"
-                        title="Marketing Manager, XYZ Corp"
-                        image="https://readymadeui.com/team-2.webp"
-                        testimonial="Their creativity and attention to detail were incredible. I am thrilled with the outcome."
-                        rating={4}
+                        name="Supun Amrathunga"
+                        title="Co-Founder, Schoolpaperbank.lk"
+                        image={"/Supun.webp"}
+                        testimonial="Zyberloop's ERP implementation transformed our business operations with seamless integration, outstanding support, and remarkable efficiency improvements."
+                        rating={5}
                     />
                 </div>
 
                 <div className='px-2 py-10'>
 
                     <TestimonialCard
-                        name="Alice Johnson"
-                        title="Marketing Manager, XYZ Corp"
-                        image="https://readymadeui.com/team-2.webp"
-                        testimonial="Their creativity and attention to detail were incredible. I am thrilled with the outcome."
-                        rating={4}
+                        name="Buddhi Withanage"
+                        title="Manager, EntrixLanka (Pvt) Ltd."
+                        image={"/Buddhi.webp"}
+                        testimonial="Zyberloop developed a stunning and highly functional website for EntrixLanka, perfectly capturing our brand's vision and driving significant customer engagement."
+                        rating={5}
                     />
                 </div>
 
                 <div className='px-2 py-10'>
 
                     <TestimonialCard
-                        name="Alice Johnson"
-                        title="Marketing Manager, XYZ Corp"
+                        name="Roshan Perera"
+                        title="Founder, Eports (Pvt) Ltd"
                         image="https://readymadeui.com/team-2.webp"
-                        testimonial="Their creativity and attention to detail were incredible. I am thrilled with the outcome."
-                        rating={4}
+                        testimonial=" Zyberloop's website maintenance and content management for eports.biz have been exceptional, ensuring our site stays up-to-date, secure, and consistently delivers a seamless user experience."
+                        rating={5}
                     />
                 </div>
-                <div className='px-2 py-10'>
+                {/* <div className='px-2 py-10'>
 
                     <TestimonialCard
                         name="Alice Johnson"
                         title="Marketing Manager, XYZ Corp"
                         image="https://readymadeui.com/team-2.webp"
                         testimonial="Their creativity and attention to detail were incredible. I am thrilled with the outcome."
-                        rating={4}
+                        rating={5}
                     />
-                </div>
-                <div className='px-2 py-10'>
+                </div> */}
 
-                    <TestimonialCard
-                        name="Alice Johnson"
-                        title="Marketing Manager, XYZ Corp"
-                        image="https://readymadeui.com/team-2.webp"
-                        testimonial="Their creativity and attention to detail were incredible. I am thrilled with the outcome."
-                        rating={4}
-                    />
-                </div>
 
 
 
