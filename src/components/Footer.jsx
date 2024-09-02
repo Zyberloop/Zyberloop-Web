@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="my-8 px-12 flex flex-wrap sm:justify-between gap-6 relative z-20 max-w-max mx-auto">
         <div className="flex space-x-5">
           <a
-            href="#"
+            href="https://www.facebook.com/zyberloop"
             className="text-gray-300 hover:text-white text-base transition-all"
           >
             <Facebook />
@@ -19,7 +19,7 @@ export default function Footer() {
             <Linkedin />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/zyberloop/"
             className="text-gray-300 hover:text-white text-base transition-all"
           >
             <Instagram />
