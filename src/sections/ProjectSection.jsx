@@ -1,4 +1,5 @@
 import ProjectCard from "../components/PrjectCard";
+import { Link } from 'react-router-dom';
 
 const ProjectSection = () => {
   return (
@@ -9,15 +10,18 @@ const ProjectSection = () => {
         </div>
 
         <div className="max-w-[1160px] w-full mx-auto space-y-10 px-4">
-          <ProjectCard
-            tag={"Featured Project"}
-            name={"POS System for Schoolpaperbank.lk"}
-            description={
-              "We implemented a Point of Sale (POS) system for SchoolPaperBank, designed to streamline their sales process and manage inventory in real-time. The system features an intuitive user interface, making it easy for staff to process transactions quickly and efficiently. With automated stock updates and detailed sales reporting, this POS solution enhances operational efficiency and supports better decision-making for SchoolPaperBank’s retail operations."
-            }
-            link={"/erp.webp"}
-            flipped={false}
-          />
+          <Link to="/erp-project">
+            <ProjectCard
+              tag={"Featured Project"}
+              name={"POS System for Schoolpaperbank.lk"}
+              description={
+                "We implemented a Point of Sale (POS) system for SchoolPaperBank, designed to streamline their sales process and manage inventory in real-time. The system features an intuitive user interface, making it easy for staff to process transactions quickly and efficiently. With automated stock updates and detailed sales reporting, this POS solution enhances operational efficiency and supports better decision-making for SchoolPaperBank’s retail operations."
+              }
+              link={"/erp.webp"}
+              flipped={false}
+            />
+          </Link>
+
           <ProjectCard
             tag={"Featured Project"}
             name={"PearlX"}
