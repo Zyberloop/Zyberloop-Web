@@ -83,13 +83,13 @@ const Navbar = () => {
 
   const handleClick = (index) => {
     // Navigate to the desired route based on the index
-    const routes = ["/", "/services", "/projects", "/careers"];
+    const routes = ["/", "/services", "/projects", "/pricing", "/careers"];
     navigate(routes[index]);
   };
 
   return (
-    <div ref={navbarRef} className="w-full h-32 bg-navbar-gradient">
-      <div className="max-w-max w-full mx-auto h-32 flex justify-between items-center relative px-4">
+    <div ref={navbarRef} className="w-full h-20 bg-navbar-gradient">
+      <div className="max-w-max w-full mx-auto h-20 flex justify-between items-center relative px-4">
         <img
           src={"cloud.webp"}
           className="absolute inset-0 object-cover w-full h-full"
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-0 xl:gap-8 items-center text-sm lg:text-xl text-white z-10">
-          {["Home", "Services", "Projects", "Careers"].map(
+          {["Home", "Services", "Projects", "Pricing", "Careers"].map(
             (item, index) => (
               <div
                 key={item}
@@ -159,7 +159,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white/30 backdrop-blur-md text-white flex flex-col items-center gap-1 py-4 z-50 border border-white/20 rounded-lg">
-            {["Home", "Services", "Projects", "Careers"].map(
+            {["Home", "Services", "Projects", "Pricing", "Careers"].map(
               (item, index) => (
                 <div
                   key={item}

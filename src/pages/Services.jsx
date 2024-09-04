@@ -6,9 +6,9 @@ import ServicesSection from '../sections/ServicesSection'
 export default function Services() {
     return (
         <div className="w-full  bg-primary">
-            <Navbar />
+
             <ServicesSection />
-            <Footer />
+
         </div>
     )
 }
