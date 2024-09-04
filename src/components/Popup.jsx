@@ -1,19 +1,56 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com"; // Import EmailJS
 
 const Popup = ({ isOpen, onClose, jobType }) => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [cv, setCv] = useState("");
+  const [cv, setCv] = useState(null); // Set CV as a file object
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log({ fullName, jobType, email, cv, description });
-    onClose(); // Close popup after submission
+
+    if (!cv) {
+      alert("Please upload your CV.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("full_name", fullName);
+    formData.append("job_type", jobType);
+    formData.append("email", email);
+    formData.append("cv", cv);
+    formData.append("description", description);
+
+    const templateParams = {
+      full_name: fullName,
+      job_type: jobType,
+      email: email,
+      description: description,
+      message: "Here is my CV for the position.",
+    };
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID_FOR_JOBS,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Application submitted successfully!");
+          onClose(); // Close the popup after submission
+        },
+        (err) => {
+          console.log("FAILED...", err);
+          alert("Failed to send application. Please try again later.");
+        }
+      );
   };
 
-  if (!isOpen) return null; // Don't render anything if popup is not open
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-70 flex items-center justify-center z-50">
@@ -46,8 +83,9 @@ const Popup = ({ isOpen, onClose, jobType }) => {
             <label className="block text-[#7F5283] mb-2">CV</label>
             <input
               type="file"
-              onChange={(e) => setCv(e.target.files[0]?.name || "")}
+              onChange={(e) => setCv(e.target.files[0])} // Capture the file
               className="w-full border border-[#7F5283] p-2 rounded-lg bg-[#FEFBF6] text-[#3D3C42]"
+              required
             />
           </div>
           <div className="mb-4">
