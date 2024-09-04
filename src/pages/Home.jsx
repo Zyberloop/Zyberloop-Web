@@ -10,7 +10,7 @@ import ProjectSection from "../sections/ProjectSection";
 const Home = () => {
   return (
     <div className="w-full  bg-primary">
-      <Navbar />
+
       <HeroSection />
       <CardSection />
       <ProjectSection />
@@ -18,7 +18,7 @@ const Home = () => {
       <Testimonial />
       <ContactForm />
 
-      <Footer />
+
     </div>
   );
 };

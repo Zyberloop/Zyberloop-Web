@@ -9,12 +9,12 @@ import ContactForm from "../sections/ContactForm";
 export default function ErpProject() {
     return (
         <div className="w-full bg-primary">
-            <Navbar />
+
             <HeroSectionErp />
             <ErpSlider />
             <IntroSection />
             <ContactForm />
-            <Footer />
+
         </div>
     );
 }
