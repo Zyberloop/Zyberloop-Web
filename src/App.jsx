@@ -10,6 +10,7 @@ import Services from "./pages/Services.jsx"
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Pricing from "./pages/Pricing.jsx";
+import Projects from "./pages/Projects.jsx";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/careers" element={<Career />} />
           <Route path="/erp-project" element={<ErpProject />} />
           <Route path="/erp-project" element={<ErpProject />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/services" element={<Services />} />
           <Route path="/pricing" element={<Pricing />} />
         </Routes>
