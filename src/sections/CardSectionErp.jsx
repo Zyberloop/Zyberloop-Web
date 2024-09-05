@@ -1,49 +1,56 @@
 import React from 'react';
-import Card from '../components/Card';
 import { PanelsTopLeft, TabletSmartphone, ChartNetwork, ShieldHalf } from 'lucide-react';
 
 const CardSectionErp = () => {
     return (
-        <div className='flex flex-col items-center justify-center py-16 bg-gray-100'>
-            <div className='w-full max-w-[1600px] px-6'>
-                <div className='grid xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8'>
+        <div className='flex flex-col items-center justify-center py-12'>
+            <div className='w-full max-w-[1200px] px-4'>
+                <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-6'>
                     
-                    <div className='relative group'>
-                        <Card
-                            icon={<PanelsTopLeft className='h-auto xl:w-200 md:w-16 w-12 text-blue-600' />}
-                            title="Responsive UI"
-                            description="Zyberloop creates robust, user-friendly websites that enhance businesses' online presence, tailored to local markets."
-                            
-                        />
+                <div className='relative group h-64 flex flex-col  justify-center p-6 bg-gray-800 rounded-lg'>
+                        <PanelsTopLeft className='h-auto lg:w-16 md:w-14 w-10 text-blue-600' />
+                        <h3 className='text-lg font-semibold text-white mt-4'>
+                            Responsive Web Development
+                        </h3>
+                        <p className='text-sm mt-2 text-white'>
+                            Zyberloop specializes in creating robust, user-friendly websites to enhance businesses' online presence, tailored for the local market.
+                        </p>
                         <div className='absolute inset-0 bg-gradient-to-t from-blue-600 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300 rounded-lg'></div>
                     </div>
 
-                    <div className='relative group'>
-                        <Card
-                            icon={<TabletSmartphone className='h-auto xl:w-20 md:w-16 w-12 text-green-600' />}
-                            title="Responsive UI"
-                            description="We develop mobile apps to enhance customer engagement, focusing on usability, functionality, and performance."
-                           
-                        />
+                   
+                    <div className='relative group h-64 flex flex-col  justify-center p-6 bg-gray-800 rounded-lg'>
+                        <TabletSmartphone className='h-auto lg:w-16 md:w-14 w-10 text-green-600' />
+                        <h3 className='text-lg font-semibold text-white mt-4'>
+                            Mobile App Development
+                        </h3>
+                        <p className='text-sm mt-2 text-white'>
+                            We design and develop mobile apps to engage customers and improve usability, focusing on functionality and performance.
+                        </p>
                         <div className='absolute inset-0 bg-gradient-to-t from-green-600 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300 rounded-lg'></div>
                     </div>
 
-                    <div className='relative group'>
-                        <Card
-                            icon={<ChartNetwork className='h-auto xl:w-20 md:w-16 w-12 text-yellow-600' />}
-                            title="Responsive UI"
-                            description="We provide customized ERP solutions to streamline operations and improve business efficiency."
-                        
-                        />
+                   
+                    <div className='relative group h-64 flex flex-col  justify-center p-6 bg-gray-800 rounded-lg'>
+                        <ChartNetwork className='h-auto lg:w-16 md:w-14 w-10 text-yellow-600' />
+                        <h3 className='text-lg font-semibold text-white mt-4'>
+                            Custom ERP Solutions
+                        </h3>
+                        <p className='text-sm mt-2 text-white'>
+                            We deliver tailored ERP solutions to streamline operations, boost efficiency, and scale your business.
+                        </p>
                         <div className='absolute inset-0 bg-gradient-to-t from-yellow-600 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300 rounded-lg'></div>
                     </div>
 
-                    <div className='relative group'>
-                        <Card
-                            icon={<ShieldHalf className='h-auto xl:w-20 md:w-16 w-12 text-red-600' />}
-                            title="Responsive UI"
-                            description="Zyberloop creates impactful logos and brand designs to establish a strong, memorable identity for businesses."
-                        />
+                   
+                    <div className='relative group h-64 flex flex-col  justify-center p-6 bg-gray-800 rounded-lg'>
+                        <ShieldHalf className='h-auto lg:w-16 md:w-14 w-10 text-red-600' />
+                        <h3 className='text-lg font-semibold text-white mt-4'>
+                            Branding & Logo Design
+                        </h3>
+                        <p className='text-sm mt-2 text-white'>
+                            Zyberloop creates unique logos and brand identities that establish a strong, memorable presence for your business.
+                        </p>
                         <div className='absolute inset-0 bg-gradient-to-t from-red-600 to-transparent opacity-40 group-hover:opacity-80 transition-opacity duration-300 rounded-lg'></div>
                     </div>
 
