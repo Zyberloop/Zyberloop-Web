@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "emailjs-com";
 
 const Popup = ({ isOpen, onClose, jobType }) => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [cv, setCv] = useState(null); // Set CV as a file object
+  const [cv, setCv] = useState(null);
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
@@ -41,7 +41,7 @@ const Popup = ({ isOpen, onClose, jobType }) => {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           alert("Application submitted successfully!");
-          onClose(); // Close the popup after submission
+          onClose();
         },
         (err) => {
           console.log("FAILED...", err);
@@ -53,63 +53,76 @@ const Popup = ({ isOpen, onClose, jobType }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-gray-800 bg-opacity-70 flex items-center justify-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md relative">
-        <h2 className="text-2xl font-bold mb-4 text-[#3D3C42]">
-          Apply for {jobType}
-        </h2>
+    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+      <div className="relative bg-[#1a1a2e] p-6 rounded-lg shadow-lg w-full max-w-md text-white backdrop-blur-md border border-gray-600">
+        {/* Close Button */}
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-white bg-opacity-50 hover:bg-opacity-80 rounded-full p-2"
+        >
+          ✕
+        </button>
+
+        {/* Job Type Header */}
+        <h2 className="text-2xl font-bold mb-4 text-[#FEFBF6]">{jobType}</h2>
+
+        {/* Form */}
         <form onSubmit={handleSubmit}>
+          {/* Full Name */}
           <div className="mb-4">
-            <label className="block text-[#7F5283] mb-2">Full Name</label>
+            <label className="block text-[#A6D1E6] mb-2">Name</label>
             <input
               type="text"
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
-              className="w-full border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#3D3C42]"
+              className="w-full bg-[#282846] text-[#FEFBF6] border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#A6D1E6]"
               required
             />
           </div>
+
+          {/* Email */}
           <div className="mb-4">
-            <label className="block text-[#7F5283] mb-2">Email</label>
+            <label className="block text-[#A6D1E6] mb-2">Email</label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#3D3C42]"
+              className="w-full bg-[#282846] text-[#FEFBF6] border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#A6D1E6]"
               required
             />
           </div>
+
+          {/* CV Upload */}
           <div className="mb-4">
-            <label className="block text-[#7F5283] mb-2">CV</label>
+            <label className="block text-[#A6D1E6] mb-2">CV</label>
             <input
               type="file"
-              onChange={(e) => setCv(e.target.files[0])} // Capture the file
-              className="w-full border border-[#7F5283] p-2 rounded-lg bg-[#FEFBF6] text-[#3D3C42]"
+              onChange={(e) => setCv(e.target.files[0])}
+              className="w-full bg-[#282846] text-[#FEFBF6] border border-[#7F5283] p-2 rounded-lg focus:ring-2 focus:ring-[#A6D1E6]"
               required
             />
           </div>
+
+          {/* Description */}
           <div className="mb-4">
-            <label className="block text-[#7F5283] mb-2">Description</label>
+            <label className="block text-[#A6D1E6] mb-2">Description</label>
             <textarea
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="w-full border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#3D3C42]"
+              className="w-full bg-[#282846] text-[#FEFBF6] border border-[#7F5283] p-3 rounded-lg focus:ring-2 focus:ring-[#A6D1E6]"
               rows="4"
             />
           </div>
-          <button
-            type="submit"
-            className="inline-block mt-5 px-8 py-3 text-lg font-semibold text-white bg-Card_Button rounded-full hover:bg-primary transition duration-300"
-          >
-            Submit
-          </button>
-          <button
-            type="button"
-            onClick={onClose}
-            className="inline-block mt-5 ml-5 px-8 py-3 text-lg font-semibold text-white bg-red-500 rounded-full hover:bg-primary transition duration-300"
-          >
-            Close
-          </button>
+
+          {/* Submit Button */}
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              className="bg-[#7F5283] hover:bg-[#A6D1E6] text-[#FEFBF6] py-2 px-8 rounded-full transition-all duration-300"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>
