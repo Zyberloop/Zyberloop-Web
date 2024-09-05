@@ -1,11 +1,4 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Core Swiper styles
-import "swiper/css/pagination"; // Pagination styles
-import "swiper/css/navigation"; // Navigation styles
-
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
 import OpportunityCard from "./OpportunityCard";
 import Popup from "../../components/Popup";
 
@@ -37,26 +30,19 @@ const OpportunityCarousel = () => {
 
   return (
     <div className="w-full flex flex-col items-center mt-10">
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="w-full"
-      >
+      {/* List opportunities in a row */}
+      <div className="flex flex-col space-y-6 w-full">
         {opportunities.map((opportunity, index) => (
-          <SwiperSlide key={index}>
-            <OpportunityCard
-              title={opportunity.title}
-              description={opportunity.description}
-              onClick={() => handleCardClick(opportunity.title)}
-            />
-          </SwiperSlide>
+          <OpportunityCard
+            key={index}
+            title={opportunity.title}
+            description={opportunity.description}
+            onClick={() => handleCardClick(opportunity.title)}
+          />
         ))}
-      </Swiper>
+      </div>
 
+      {/* Popup component */}
       <Popup
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}

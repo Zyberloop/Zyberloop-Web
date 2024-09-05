@@ -83,7 +83,7 @@ const Navbar = () => {
 
   const handleClick = (index) => {
     // Navigate to the desired route based on the index
-    const routes = ["/", "/services", "/pricing"];
+    const routes = ["/", "/services", "/pricing", "/careers"];
     navigate(routes[index]);
   };
 
@@ -101,7 +101,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-0 xl:gap-8 items-center text-sm lg:text-xl text-white z-10">
-          {["Home", "Services", "Pricing"].map((item, index) => (
+          {["Home", "Services", "Pricing", "Careers"].map((item, index) => (
             <div
               key={item}
               ref={(el) => (navItemRefs.current[index] = el)}
@@ -157,7 +157,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white/30 backdrop-blur-md text-white flex flex-col items-center gap-1 py-4 z-50 border border-white/20 rounded-lg">
-            {["Home", "Services", "Pricing"].map((item, index) => (
+            {["Home", "Services", "Pricing", "Careers"].map((item, index) => (
               <div
                 key={item}
                 ref={(el) => (navItemRefs.current[index] = el)}
