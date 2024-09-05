@@ -4,10 +4,13 @@ import CareerHero from "../sections/careerspage-sections/CareerHero";
 
 const Career = () => {
   return (
-    <div className="w-full bg-primary h-screen">
-      <Navbar />
+    <div className="w-full bg-primary ">
+      
       <CareerHero />
-      <Footer />
+
+    
+
+
     </div>
   );
 };

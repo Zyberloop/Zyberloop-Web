@@ -83,13 +83,13 @@ const Navbar = () => {
 
   const handleClick = (index) => {
     // Navigate to the desired route based on the index
-    const routes = ["/", "/discover", "/marketplace", "/careers", "/community"];
+    const routes = ["/", "/services", "/pricing"];
     navigate(routes[index]);
   };
 
   return (
-    <div ref={navbarRef} className="w-full h-32 bg-navbar-gradient">
-      <div className="max-w-max w-full mx-auto h-32 flex justify-between items-center relative px-4">
+    <div ref={navbarRef} className="w-full h-20 bg-navbar-gradient">
+      <div className="max-w-max w-full mx-auto h-20 flex justify-between items-center relative px-4">
         <img
           src={"cloud.webp"}
           className="absolute inset-0 object-cover w-full h-full"
@@ -101,20 +101,18 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-0 xl:gap-8 items-center text-sm lg:text-xl text-white z-10">
-          {["Home", "Discover", "Marketplace", "Careers", "Community"].map(
-            (item, index) => (
-              <div
-                key={item}
-                ref={(el) => (navItemRefs.current[index] = el)}
-                className="ripple-container hover:text-opacity-80 hover:text-pink-300 transition duration-300 cursor-pointer px-4 py-2 rounded-lg"
-                onMouseEnter={(event) => handleMouseEnter(index, event)}
-                onMouseLeave={() => handleMouseLeave(index)}
-                onClick={() => handleClick(index)}
-              >
-                {item}
-              </div>
-            )
-          )}
+          {["Home", "Services", "Pricing"].map((item, index) => (
+            <div
+              key={item}
+              ref={(el) => (navItemRefs.current[index] = el)}
+              className="ripple-container hover:text-opacity-80 hover:text-pink-300 transition duration-300 cursor-pointer px-4 py-2 rounded-lg"
+              onMouseEnter={(event) => handleMouseEnter(index, event)}
+              onMouseLeave={() => handleMouseLeave(index)}
+              onClick={() => handleClick(index)}
+            >
+              {item}
+            </div>
+          ))}
         </div>
 
         {/* Desktop Button */}
@@ -159,20 +157,18 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 w-full bg-white/30 backdrop-blur-md text-white flex flex-col items-center gap-1 py-4 z-50 border border-white/20 rounded-lg">
-            {["Home", "Discover", "Marketplace", "Careers", "Community"].map(
-              (item, index) => (
-                <div
-                  key={item}
-                  ref={(el) => (navItemRefs.current[index] = el)}
-                  className="ripple-container hover:text-opacity-80 transition duration-300 cursor-pointer w-48 h-12 text-center rounded-full flex items-center justify-center"
-                  onMouseEnter={(event) => handleMouseEnter(index, event)}
-                  onMouseLeave={() => handleMouseLeave(index)}
-                  onClick={() => handleClick(index)}
-                >
-                  {item}
-                </div>
-              )
-            )}
+            {["Home", "Services", "Pricing"].map((item, index) => (
+              <div
+                key={item}
+                ref={(el) => (navItemRefs.current[index] = el)}
+                className="ripple-container hover:text-opacity-80 transition duration-300 cursor-pointer w-48 h-12 text-center rounded-full flex items-center justify-center"
+                onMouseEnter={(event) => handleMouseEnter(index, event)}
+                onMouseLeave={() => handleMouseLeave(index)}
+                onClick={() => handleClick(index)}
+              >
+                {item}
+              </div>
+            ))}
             <button
               className="ripple-container bg-button_base h-12 w-48 rounded-full text-lg hover:bg-opacity-90 transition duration-300"
               onMouseEnter={createRipple}
