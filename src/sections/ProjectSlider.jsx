@@ -42,7 +42,7 @@ const ProjectSlider = () => {
                             <img src={project.imgSrc} alt={project.title} className='w-full h-80 object-cover rounded-lg' />
                             <div className='absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50 rounded-lg'>
                                 <h3 className='text-xl font-bold mb-2'>{project.title}</h3>
-                                <p className='text-sm'>{project.description}</p>
+                                <p className='text-sm text-center'>{project.description}</p>
                             </div>
                         </div>
                     ))}
