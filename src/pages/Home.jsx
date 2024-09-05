@@ -9,7 +9,10 @@ import ProjectSection from "../sections/ProjectSection";
 
 const Home = () => {
   return (
+
+
     <div className="w-full  bg-primary">
+
 
       <HeroSection />
       <CardSection />

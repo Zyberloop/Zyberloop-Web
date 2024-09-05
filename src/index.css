@@ -15,6 +15,7 @@
   opacity: 1;
   /* Ensure the active dot is fully visible */
 }
+
 .ripple-container {
   position: relative;
   overflow: hidden;
@@ -26,4 +27,12 @@
   transform: scale(0);
   background: rgba(255, 255, 255, 0.6);
   pointer-events: none;
+  animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
