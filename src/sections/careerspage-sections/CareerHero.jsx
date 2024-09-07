@@ -7,7 +7,7 @@ const CareerHero = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center text-center space-y-5 px-4 max-w-4xl mt-16">
         <h1 className="gradient-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
-          Build Your Career with
+          Build Your Career with us
         </h1>
         <div className="h-[2px] w-full sm:w-3/5 md:w-2/5 mx-auto bg-gradient-to-r from-primary via-Card_Button to-primary"></div>
         <p className="text-white text-opacity-50 text-lg sm:text-xl md:text-2xl">
