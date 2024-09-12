@@ -106,7 +106,7 @@ const PricingPlans = () => {
 
                 </div>
 
-                <div className="flex mx-auto  bg-card_color rounded-full w-max flex flex-col md:flex-row">
+                <div className="mx-auto  bg-card_color rounded-full w-max flex flex-col md:flex-row">
                     <button
                         onClick={() => setSelectedCategory('Web Development')}
                         className={`text-sm font-semibold tracking-wide py-2.5 px-5 rounded-full ${selectedCategory === 'Web Development' ? 'bg-gradient-to-bl from-Card_Button via-purple-950 to-card_color text-white' : 'text-Card_Button'}`}

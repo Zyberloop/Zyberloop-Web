@@ -1,5 +1,5 @@
 import ProjectCard from "../components/PrjectCard";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
   return (

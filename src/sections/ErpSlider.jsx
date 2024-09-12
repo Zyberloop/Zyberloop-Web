@@ -8,8 +8,8 @@ import './ErpSlider.css';  // Import custom CSS
 
 const ErpSlider = () => {
     const slides = [
-        { id: 1, image: '/erp-1.webp', alt: 'Slide 1' },
-        { id: 2, image: '/erp-2.webp', alt: 'Slide 2' },
+      { id: 1, image: "../assets/images/erp-1.webp", alt: "Slide 1" },
+      { id: 2, image: "../assets/images/erp-2.webp", alt: "Slide 2" },
     ];
 
     return (

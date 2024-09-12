@@ -126,7 +126,7 @@ const Navbar = () => {
               ref={starRef}
               className="absolute w-6 h-8 md:w-9 md:h-12 -left-6 md:-left-8 top-3 md:top-4 -z-10"
             >
-              <img src={"stars.webp"} alt="stars" />
+              <img src={"/stars.webp"} alt="stars" />
             </span>
           </button>
         </div>

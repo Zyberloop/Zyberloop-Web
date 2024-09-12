@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
-import Img1 from "../../public/1.png";
-import Img2 from "../../public/2.png";
-import Img3 from "../../public/3.png";
-import Img4 from "../../public/4.png";
-import Img5 from "../../public/5.png";
-import Img6 from "../../public/6.png";
-import Img7 from "../../public/7.png";
-import Img8 from "../../public/8.png";
-import Img9 from "../../public/9.png";
-import Img10 from "../../public/10.png";
-import TechStackLogo from "../../public/TechStackLogo.png";
+import Img1 from "../assets/images/1.png";
+import Img2 from "../assets/images/2.png";
+import Img3 from "../assets/images/3.png";
+import Img4 from "../assets/images/4.png";
+import Img5 from "../assets/images/5.png";
+import Img6 from "../assets/images/6.png";
+import Img7 from "../assets/images/7.png";
+import Img8 from "../assets/images/8.png";
+import Img9 from "../assets/images/9.png";
+import Img10 from "../assets/images/10.png";
+import TechStackLogo from "../assets/images/TechStackLogo.png";
 
 gsap.registerPlugin(MotionPathPlugin);
 
