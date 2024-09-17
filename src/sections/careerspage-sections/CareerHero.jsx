@@ -25,7 +25,7 @@ const CareerHero = () => {
       </div>
 
       {/* Join with Us Section */}
-      <div className="mt-16 mb-20 text-center space-y-5 px-4 max-w-4xl">
+      <div className="mb-20 text-center space-y-5 px-4 max-w-4xl 2xl:mt-[80px] xl:mt-[100px] lg:mt-[200px] md:mt-[180px] sm:mt-[280px] mt-[280px]">
         <h2 className="text-white text-3xl sm:text-4xl md:text-5xl">
           Be a Part of Our Journey
         </h2>
