@@ -86,8 +86,8 @@ export default function Testimonial() {
         <div className="px-2 py-10">
           <TestimonialCard
             name="Roshan Perera"
-            title="Founder, Eports (Pvt) Ltd"
-            image="https://readymadeui.com/team-2.webp"
+            title="Founder, Eport Trading (pvt) Limited"
+            image="/roshan.jpg"
             testimonial=" Zyberloop's website maintenance and content management for eports.biz have been exceptional, ensuring our site stays up-to-date, secure, and consistently delivers a seamless user experience."
             rating={5}
           />
